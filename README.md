@@ -1,6 +1,9 @@
-# website-master
+# jjf0197.github.io
 GitHub Pages
 
 # to-do
-* Add page icon
 * Update content
+
+##to-do(archive)
+* Add page icon
+* Update page adress
