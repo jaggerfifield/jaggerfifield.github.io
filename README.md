@@ -1,5 +1,5 @@
 # jjf0197.github.io
-GitHub Pages
+GitHub Pages project.
 
 # to-do
 * Update content
