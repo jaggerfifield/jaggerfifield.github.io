@@ -1,30 +1,60 @@
 <!DOCTYPE html>
-<!--Double Space-->
 
 <html>
 
+<style>
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: top;
+  width: 97%;
+  background: #ccc;
+  padding: 20px;
+}
+
+a.one:link, a.one:visited {
+  background-color: #336699;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.one:hover, a.one:active {background-color: blue;}
+
+a.two {text-decoration: none;}
+a.two:link, a.two:visited {color: #ffffff}
+a.two:hover {color: #999999 }
+
+</style>
+
   <head>
-  
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TT2KDPZ');</script>
-<!-- End Google Tag Manager -->
-  
     <title>This is a title + icon</title>
     <link rel="icon" type="image/png" href="favicon/favicon32x32.png" sizes="32x32" />
   </head>
 
+  <header>
+        <h1 style="font-family:courier;">
+          <a class="two" href="index.html">J-Net</a class="two">
+        </h1>
+        <nav>
+          <h2 style="font-family:courier;">
+            <a class="one" href="math.html">Math</a>
+
+            <a class="one" href="photo.html">Photo</a>
+          </h2>
+        </nav>
+  </header>
+
   <body>
-    <h1>J-Net</h1>
-    <hr>
-    <ul>
-      <li>One</li>
-      <li><a href="photo.html">Two</li>
-      <li><a href="empty.html">Three</a></li>
-    </ul>
   </body>
 
 </html>
