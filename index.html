@@ -1,120 +1,113 @@
 <!DOCTYPE html>
 <html lang='en-US'>
+	<head>
+		<!--Set the encoding-->
+		<meta charset="UTF-8">
 
-<style>
-.bgc {
-  background-color: #140514
-}
+		<!--Import the styles-->
+		<link rel="stylesheet" type="text/css" href='./style.css'>
+		<link rel="stylesheet" type="text/css" href='../style.css'>
 
-.container {
-  position: relative;
-  font-family: "Lucida Console", Courier, monospace;
-  font-size: 40px;
-  text-align: center;
-  color: LightGrey;
-}
+		<!--Update the variables-->	
+		<script type="text/javascript" src="./vars.js"></script>
+		<script type="text/javascript" src="../vars.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				//Apply all updates to the html
+				var updates = update()
+				for(var i = 0, size = updates.length; i < size; i++){
+					document.getElementById(updates[i][0]).innerHTML = updates[i][1];
+				}
+			};
+		</script>
 
-.para {
-  font-family: "Lucida Console", Courier, monospace;
-  font-size: 20px;
-  color: LightGrey;
-}
+		<!--Set tab title and icon-->
+		<title> JN | Home </title>
+		<link rel="icon" type="image/png" href="assets/favicon/favicon32x32.png" sizes="32x32" />
+	</head>
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+	<body>
 
-.centerContent {
-  position: relative;
-}
-.list {
-  background-color: #008fb3;
-  color: white;
-  padding: 5px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-.list:hover, .list:active {background-color: red;}
+		<!--The Main Header-->
+		<div id='header'>
+			<img src="assets/pictures/banner.jpg">
+				<div class = 'centered'>
+					<a class='box' href="./index.html">&nbsp;Jagger Fifield&nbsp;</a>
+				</div>
+			</img>
+		</div>
 
-</style>
+		<nav style="width:100%;text-align: center;">
+			<h2 style="font-family:courier;">
+				<a class="list" href="./index.html">About</a>
 
-<title> JN | Home </title>
-<link rel="icon" type="image/png" href="assets/favicon/favicon32x32.png" sizes="32x32" />
+				<a class="list" href="./index.html">News</a>
 
-<body class="bgc">
+				<a class="list" href="./index.html">Coding</a>
 
-<div class="container">
-	<img src="assets/pictures/banner.jpg" alt="banner" style="width:100%;" title="banner">
-	<div class="centered"><h1>Jagger Fifield</h1></div>
-</div>
+				<a class="list" href="./index.html">Gaming</a>
 
-<nav style="width:100%;text-align: center;">
-	<h2 style="font-family:courier;">
-		<a class="list" href="docs/_site">Test</a>
-           
-		<a class="list" href="RTS/rts.html">RTS</a>
+				<a class="list" href="./index.html">Graphics</a>
+				
+				<a class="list" href="archive/index_old.html">Old</a>
+			</h2>
+		</nav>
 
-		<a class="list" href="empty.html">Empty</a>
+		<hr>
+
+		<div class='block'>
+			<h1>
+				Yet another update.
+			</h1>
+			<p>
+				This time, see the site become restructured. Adding a css file to store all the styles and scripts to automate redundant data! But that's not all, new catagories have been added for any future news that may or may not happen. 
+			</p>
+			<p>
+				Is this the only update for another decade? Find out soon on Jagger's outdated website web series!
+			</p>
+		</div>
+
+		<hr>
+
+		<div class='block'>
+			<h1>
+			Webpage redesign in progress!
+			</h1>
+			<p>
+			This website is still being developed and is not intended to be used. It is a collection of what the author finds interesting or wants to document. It is also a learning experiance, helping me to develop HTML documents. It may be pointless, but it is MY pointless.
+			</p>
+		</div>
+
+		<hr>
+
+		<div class='block'>
+			<h1>
+				Hello there:
+			</h1>
+			<p>
+				Test: One, Two, Three<a class='hyper' href="archive/na.html">.</a>Is this better than the old webpage?
+			</p>
+		</div>
 		
-		<a class="list" href="empty.html">Empty</a>
-		
-		<a class="list" href="empty.html">Empty</a>
-		
-		<a class="list" href="empty.html">Empty</a>
-		
-		<a class="list" href="empty.html">Empty</a>
-		
-		<a class="list" href="empty.html">Empty</a>
-		
-		<a class="list" href="empty.html">Empty</a>
-		
-		<a class="list" href="archive/index_old.html">Old</a>
-	</h2>
-</nav>
-<hr></hr>
+		<hr>
 
-<h1 class="container">
-Webpage redesign in progress!
-</h1>
-<p class="para">
-This website is still being developed and is not intended to be used. It is a collection of what the author finds interesting or wants to document. It is also a learning experiance, helping me to develop HTML documents. It may be pointless, but it is MY pointless.
-</p>
-<br></br>
-<h1 class="container">
-Hello there:
-</h1>
-<p class="para">
-Test: One, Two, Three
-<a href="archive/na.html">.</a>
-Is this better than the old webpage?
-</p>
+		<!--Coding Activity Widget-->
+		<figure style="text-align:center;">
+			<embed src="https://wakatime.com/share/@2f283fc0-1de2-4840-9e83-66038d635644/1e4fccc7-adc3-4f95-9996-fc59a415dbbf.svg" style="width:40%;height:50%;"></embed>
+			<embed src="https://wakatime.com/share/@2f283fc0-1de2-4840-9e83-66038d635644/9796f998-6f52-441a-9f1d-1152f0a7abfc.svg" style="width:40%;height:50%;" ></embed>
+		</figure>
 
-<figure style="text-align:center;">
-	<hr></hr>
-	<embed src="https://wakatime.com/share/@2f283fc0-1de2-4840-9e83-66038d635644/1e4fccc7-adc3-4f95-9996-fc59a415dbbf.svg" style="width:40%;height:50%;"></embed>
-	<embed src="https://wakatime.com/share/@2f283fc0-1de2-4840-9e83-66038d635644/9796f998-6f52-441a-9f1d-1152f0a7abfc.svg" style="width:40%;height:50%;" ></embed>
-</figure>
+		<footer style="text-align:center;">
+			<div class="copyright">&copy; <span id="copyrightYear" itemprop="copyrightYear"></span>
+				<span class="with-love" id="animate">
+					<i class="fa fa-user"></i>
+				</span>
+				
+				<span class="author" itemprop="copyrightHolder">
+					Jagger Fifield
+				</span>
+			</div>
+		</footer>
 
-<p style="text-align:center;color:#33334d;font-size:12px;">
-☺ 2020 Jagger Fifield
-</p>
-
-<footer>
-
-	<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-                    <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
-  </span>
-                    <span class="author" itemprop="copyrightHolder"></span>
-
-                </div>
-
-            </div>
-        </footer>
-
-</body>
+	</body>
 </html>
