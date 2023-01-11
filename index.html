@@ -6,14 +6,15 @@
 
 		<!--Import the styles-->
 		<link rel="stylesheet" type="text/css" href='./assets/style.css'>
+        <link href="https://fonts.googleapis.com/css?family=Noto%20Sans%20Mono" rel="stylesheet">
 
 		<!--Update the variables-->	
 		<script type="text/javascript" src="./assets/vars.js"></script>
 		<script type="text/javascript">
 			window.onload = function(){ 
 				//Apply all updates to the html
-				var updates = update()
-				for(var i = 0, size = updates.length; i < size; i++){
+				let updates = update()
+				for(let i = 0, size = updates.length; i < size; i++){
 					document.getElementById(updates[i][0]).innerHTML = updates[i][1];
 				}
 			};
@@ -24,39 +25,20 @@
 		<link rel="icon" type="image/png" href="./assets/favicon/favicon32x32.png" sizes="32x32" />
 	</head>
 
-	<body>
+    <body style="background-color: #3b4252;overflow: hidden; margin: 0">
 
 		<!--The Main Header-->
-		<div id='header'>
-			<img src="./assets/pictures/banner.jpg">
-            <div class = 'centered'>
-                <a class='box'>&nbsp;Jagger Fifield&nbsp;</a>
+        <div style="text-align: center;background-color: #5e81ac;margin-bottom: 0">
+        <p style="font-family: Noto Sans Mono,serif;font-size: 80px;margin: 20px;padding: 10px;color: #2e3440">&nbsp;Jagger Fifield&nbsp;</p>
+        </div>
+
+		<!--Coding Activity Widgets-->
+        <figure>
+            <div style="text-align: center">
+                <embed style="width: 55%" src="https://wakatime.com/share/@jfifield/cd14880e-068b-4db8-9f7c-96e2f253176a.svg"></embed>
             </div>
-		</div>
+        </figure>
 
-		<nav style="width:100%;text-align: center;">
-			<h2 style="font-family:courier;">
-				<a class="list" href="./">About</a>
-
-				<a class="list" href="./frame.html">Frame</a>
-
-				<a class="list" href="./">Coding</a>
-
-				<a class="list" href="./">Gaming</a>
-
-				<a class="list" href="./">Graphics</a>
-				
-				<a class="list" href="./archive/index_old.html">Old</a>
-			</h2>
-		</nav>
-
-		<hr>
-
-		<!--Coding Activity Widget-->
-		<figure style="text-align:center;">
-			<embed src="https://wakatime.com/share/@2f283fc0-1de2-4840-9e83-66038d635644/1e4fccc7-adc3-4f95-9996-fc59a415dbbf.svg" style="width:40%;height:50%;"></embed>
-			<embed src="https://wakatime.com/share/@2f283fc0-1de2-4840-9e83-66038d635644/9796f998-6f52-441a-9f1d-1152f0a7abfc.svg" style="width:40%;height:50%;" ></embed>
-		</figure>
 
 		<footer style="text-align:center;">
 			<div class="copyright">&copy; <span id="copyrightYear" itemprop="copyrightYear"></span>

@@ -38,13 +38,12 @@ let key_a = false;
 let key_s = false;
 let key_d = false;
 
-var x = 0;
-var y = 0;
+let x = 0;
+let y = 0;
 
 if(!status){
 	throw new TypeError(`Could not link shader program:\n${gl.getProgramInfoLog(jshader)}`)
 }
-4
 function main(){
 	if(gl == null){
 		alert("WebGL not initalized! Your browser may not support it!");
@@ -71,7 +70,7 @@ function main(){
 
 function draw(){
 	// Clear color is set to black
-	gl.clearColor(0.0, 0.0, 0.0, 1.0);
+    gl.clearColor(76/255, 86/255, 106/255, 1.0);
 	gl.clear(gl.COLOR_BUFFER_BIT);
 	gl.useProgram(jshader);
 	gl.drawArrays(gl.POINTS, 0, 1);
