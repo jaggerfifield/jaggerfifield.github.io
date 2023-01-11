@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+	<head>
+		<!--Set the encoding-->
+		<meta charset="UTF-8">
+
+		<!--Import the styles-->
+		<link rel="stylesheet" type="text/css" href='./assets/style.css'>
+
+		<!--Update the variables-->	
+		<script type="text/javascript" src="./assets/vars.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){ 
+				//Apply all updates to the html
+				var updates = update()
+				for(var i = 0, size = updates.length; i < size; i++){
+					document.getElementById(updates[i][0]).innerHTML = updates[i][1];
+				}
+			};
+		</script>
+
+		<!--Set tab title and icon-->
+		<title> JN | Home </title>
+		<link rel="icon" type="image/png" href="./assets/favicon/favicon32x32.png" sizes="32x32" />
+	</head>
+
+	<body>
+
+		<!--The Main Header-->
+		<div id='header'>
+			<img src="./assets/pictures/banner.jpg">
+            <div class = 'centered'>
+                <a class='box'>&nbsp;Jagger Fifield&nbsp;</a>
+            </div>
+		</div>
+
+		<nav style="width:100%;text-align: center;">
+			<h2 style="font-family:courier;">
+				<a class="list" href="./">About</a>
+
+				<a class="list" href="./frame.html">Frame</a>
+
+				<a class="list" href="./">Coding</a>
+
+				<a class="list" href="./">Gaming</a>
+
+				<a class="list" href="./">Graphics</a>
+				
+				<a class="list" href="./archive/index_old.html">Old</a>
+			</h2>
+		</nav>
+
+		<hr>
+
+		<!--Coding Activity Widget-->
+		<figure style="text-align:center;">
+			<embed src="https://wakatime.com/share/@2f283fc0-1de2-4840-9e83-66038d635644/1e4fccc7-adc3-4f95-9996-fc59a415dbbf.svg" style="width:40%;height:50%;"></embed>
+			<embed src="https://wakatime.com/share/@2f283fc0-1de2-4840-9e83-66038d635644/9796f998-6f52-441a-9f1d-1152f0a7abfc.svg" style="width:40%;height:50%;" ></embed>
+		</figure>
+
+		<footer style="text-align:center;">
+			<div class="copyright">&copy; <span id="copyrightYear" itemprop="copyrightYear"></span>
+				<span class="with-love" id="animate">
+					<i class="fa fa-user"></i>
+				</span>
+				
+				<span class="author" itemprop="copyrightHolder">
+					Jagger Fifield
+				</span>
+			</div>
+		</footer>
+
+	</body>
+</html>
