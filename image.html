@@ -25,7 +25,7 @@
 		<link rel="icon" type="image/png" href="./assets/favicon/favicon32x32.png" sizes="32x32" />
 	</head>
 
-    <body style="background-color: #3b4252;overflow: hidden; margin: 0">
+    <body style="background-color: #3b4252; margin: 0">
 
 		<!--The Main Header-->
         <div style="text-align: center;background-color: #5e81ac;margin-bottom: 0;">
@@ -34,18 +34,44 @@
 
 		<!--The nav bar-->
 		<div style="background-color: #D8Dee9;height:44px;text-align:center;line-height:44px">
-			<a class="nav_button_active" href="index.html" title="Home page">Home</a>
+			<a class="nav_button" href="index.html" title="Home page">Home</a>
 			<a class="nav_button" href="frame.html" title="Frame test">Canvas Test</a>
-			<a class="nav_button" href="image.html" title="Image processing">Image</a>
+			<a class="nav_button_active" href="image.html" title="Image processing">Image</a>
 		</div>
 
-		<!--Coding Activity Widgets-->
-        <figure>
-            <div style="text-align: center">
-                <embed style="width: 55%" src="https://wakatime.com/share/@jfifield/cd14880e-068b-4db8-9f7c-96e2f253176a.svg"></embed>
-            </div>
-        </figure>
+		<!--Upload File-->
+		<div>
+			<h1>Upload Image</h1>
+			<input type="file" id="img" name="filename" onchange="showImg(event)"/>
+			<script>
+				data = new FileReader()
 
+				function showImg(e){
+					var file = e.target.files[0];
+					//console.log(file.name)
+
+					img = URL.createObjectURL(file)
+					//console.log(img)
+
+					src = "<img style='width:50%;height:50%;' src='" + img + "'>"
+					//console.log(src)
+
+					data.readAsBinaryString(file)
+
+					data.addEventListener("load", loaded)
+					
+
+					document.getElementById("image_preview").innerHTML = src
+				}
+
+				function loaded(){
+					console.log(data.result)
+				}
+			</script>
+		</div>
+
+		<div id="image_preview"></div>
+		<div id="binary_preview"></div>
 
 		<footer style="text-align:center;">
 			<div class="copyright">&copy; <span id="copyrightYear" itemprop="copyrightYear"></span>

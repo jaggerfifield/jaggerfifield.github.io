@@ -7,3 +7,31 @@
   font-size: 12px;
   color: rgb(50, 50, 50);
 }
+
+.nav_button {
+	width: 180px;
+	font-family: "Noto Sans Mono";
+	/*background-color: #E5E9F0;*/
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+	display: block;
+	float: left;
+}
+
+a:visited.nav_button, a:visited.nav_button_active, a:link.nav_button, a:link.nav_button_active {
+	text-decoration: none;
+	color: #4C566A;
+}
+
+.nav_button_active {
+	width: 180px;
+	font-family: "Noto Sans Mono";
+	background-color: #5E81AC;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+	display: block;
+	float: left;
+
+}
