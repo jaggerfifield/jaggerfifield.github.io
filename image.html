@@ -8,6 +8,8 @@
 		<link rel="stylesheet" type="text/css" href='./assets/style.css'>
         <link href="https://fonts.googleapis.com/css?family=Noto%20Sans%20Mono" rel="stylesheet">
 
+		<script src="https://www.lactame.com/lib/image-js/0.21.2/image.min.js"></script>
+
 		<!--Update the variables-->	
 		<script type="text/javascript" src="./assets/vars.js"></script>
 		<script type="text/javascript">
@@ -44,34 +46,51 @@
 			<h1>Upload Image</h1>
 			<input type="file" id="img" name="filename" onchange="showImg(event)"/>
 			<script>
-				data = new FileReader()
-
-				function showImg(e){
+				async function showImg(e){
 					var file = e.target.files[0];
 					//console.log(file.name)
 
 					img = URL.createObjectURL(file)
 					//console.log(img)
 
-					src = "<img style='width:50%;height:50%;' src='" + img + "'>"
-					//console.log(src)
+					let image = await IJS.Image.load(img);
+					let img_gs = image.grey();
 
-					data.readAsBinaryString(file)
+					document.getElementById("image_preview").src = img
+					document.getElementById("image_preview_gs").src = img_gs.toDataURL();
+					//document.getElementById("image_histo").src =
+					draw_histo(img_gs);
 
-					data.addEventListener("load", loaded)
-					
-
-					document.getElementById("image_preview").innerHTML = src
+					console.log(image)
 				}
 
-				function loaded(){
-					console.log(data.result)
+				function draw_histo(image){
+					const canvas = document.getElementById("histogram");
+					const ctx = canvas.getContext("2d");
+
+					let histogram = image.getHistogram();
+					let size = image.size;
+
+					for(let i = 0; i < 255; i++){
+						ctx.beginPath();
+						ctx.rect(i*2, 255, 2, -histogram[i]/1000);
+						console.log(histogram[i])
+						ctx.stroke();
+					}
 				}
+
 			</script>
 		</div>
 
-		<div id="image_preview"></div>
-		<div id="binary_preview"></div>
+		<div>
+			<image id="image_preview" style="width:20%;height:20%;" src="">
+			<image id="image_preview_gs" style="width:20%;height:20%;" src="">
+			<image id="image_histo" style="width:20%;height:20%" src="">
+		</div>
+
+		<div>
+			<canvas id="histogram" style="background-color:white;" width="510" height="255"></canvas>
+		</div>
 
 		<footer style="text-align:center;">
 			<div class="copyright">&copy; <span id="copyrightYear" itemprop="copyrightYear"></span>
