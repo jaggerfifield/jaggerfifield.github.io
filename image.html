@@ -71,10 +71,12 @@
 					let histogram = image.getHistogram();
 					let size = image.size;
 
-					for(let i = 0; i < 255; i++){
+					let h = Math.max(...histogram);
+					console.log(h);
+
+					for(let i = 0; i < 256; i++){
 						ctx.beginPath();
-						ctx.rect(i*2, 255, 2, -histogram[i]/1000);
-						console.log(histogram[i])
+						ctx.rect(i*2, 255, 2, -255*histogram[i]/h);
 						ctx.stroke();
 					}
 				}
@@ -89,7 +91,7 @@
 		</div>
 
 		<div>
-			<canvas id="histogram" style="background-color:white;" width="510" height="255"></canvas>
+			<canvas id="histogram" style="background-color:white;" width="510" height="256"></canvas>
 		</div>
 
 		<footer style="text-align:center;">
