@@ -19,7 +19,7 @@ const jcan = document.createElement("canvas");
 document.body.appendChild(jcan);   
 
 jcan.width = window.innerWidth;
-jcan.height = window.innerHeight;
+jcan.height = window.innerHeight - 218;
 
 const gl = jcan.getContext("webgl");
 

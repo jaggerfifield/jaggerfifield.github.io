@@ -31,63 +31,8 @@
 			<a id="nav-image" class="nav_button" href="image.html" title="Image processing">Image</a>
 		</div>
 
-        <title>JN | Image Processing</title>
-        <script src="https://www.lactame.com/lib/image-js/0.21.2/image.min.js"></script>
-        <script>document.getElementById("nav-image").className = "nav_button_active";</script>		
-
-        <!--Upload File-->
-		<div>
-			<h1>Upload Image</h1>
-			<input type="file" id="img" name="filename" onchange="showImg(event)"/>
-			<script>
-				async function showImg(e){
-					var file = e.target.files[0];
-					//console.log(file.name)
-
-					img = URL.createObjectURL(file)
-					//console.log(img)
-
-					let image = await IJS.Image.load(img);
-					let img_gs = image.grey();
-
-					document.getElementById("image_preview").src = img
-					document.getElementById("image_preview_gs").src = img_gs.toDataURL();
-					//document.getElementById("image_histo").src =
-					draw_histo(img_gs);
-
-					console.log(image)
-				}
-
-				function draw_histo(image){
-					const canvas = document.getElementById("histogram");
-					const ctx = canvas.getContext("2d");
-
-					let histogram = image.getHistogram();
-					let size = image.size;
-
-					let h = Math.max(...histogram);
-					console.log(h);
-
-					for(let i = 0; i < 256; i++){
-						ctx.beginPath();
-						ctx.rect(i*2, 255, 2, -255*histogram[i]/h);
-						ctx.stroke();
-					}
-				}
-
-			</script>
-		</div>
-
-		<div>
-			<image id="image_preview" style="width:20%;height:20%;" src="">
-			<image id="image_preview_gs" style="width:20%;height:20%;" src="">
-			<image id="image_histo" style="width:20%;height:20%" src="">
-		</div>
-
-		<div>
-			<canvas id="histogram" style="background-color:white;" width="510" height="256"></canvas>
-		</div>
-
+<title>JN | Programming</title>
+<script>document.getElementById("nav-programming").className = "nav_button_active"</script>
 		<footer style="text-align:center;">
 			<div class="copyright">&copy; <span id="copyrightYear" itemprop="copyrightYear">2019-2026</span>
 				<span class="with-love" id="animate">

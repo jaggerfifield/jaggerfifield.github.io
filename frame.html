@@ -3,32 +3,48 @@
 	<head>
 		<!--Set the encoding-->
 		<meta charset="UTF-8">
-		
+
 		<!--Import the styles-->
 		<link rel="stylesheet" type="text/css" href='./assets/style.css'>
         <link href="https://fonts.googleapis.com/css?family=Noto%20Sans%20Mono" rel="stylesheet">
 
-		<!--Set the tab title-->
-		<title>Frame Test</title>
+		<!--Set icon-->
+		<link rel="icon" type="image/png" href="./assets/favicon/favicon32x32.png" sizes="32x32" />
+	
+        <script></script>
 
-	</head>
+    </head>
 
-	<body style="overflow: hidden; margin: 0;background-color: #3b4252;">
+    <body style="background-color: #3b4252;overflow: hidden; margin: 0">
 
-	<!--The Main Header-->
+		<!--The Main Header-->
         <div style="text-align: center;background-color: #5e81ac;margin-bottom: 0;">
         	<p style="font-family: Noto Sans Mono,serif;font-size: 80px;margin: 20px;margin-bottom:0px;padding: 10px;color: #2e3440">&nbsp;Jagger Fifield&nbsp;</p>
         </div>
 
 		<!--The nav bar-->
 		<div style="background-color: #D8Dee9;height:44px;text-align:center;line-height:44px">
-			<a class="nav_button" href="index.html" title="Home page">Home</a>
-			<a class="nav_button_active" href="frame.html" title="Frame test">Canvas Test</a>
-			<a class="nav_button" href="image.html" title="Image processing">Image</a>
+			<a id="nav-index" class="nav_button" href="index.html" title="Home page">Home</a>
+			<a id="nav-programming" class="nav_button" href="programming.html" title="Programming">Programming</a>
+			<a id="nav-blender" class="nav_button" href="blender.html" title="Blender projects">Blender (3D)</a>
+			<a id="nav-frame" class="nav_button" href="frame.html" title="Frame test">Canvas Test</a>
+			<a id="nav-image" class="nav_button" href="image.html" title="Image processing">Image</a>
 		</div>
 
-		<script language="javascript" src="./framed.js"></script>
-	
-	</body>
+		<title>JN | Canvas</title>
+        <script>document.getElementById("nav-frame").className = "nav_button_active";</script>
+        <script language="javascript" src="./framed.js"></script>
+		<footer style="text-align:center;">
+			<div class="copyright">&copy; <span id="copyrightYear" itemprop="copyrightYear">2019-2026</span>
+				<span class="with-love" id="animate">
+					<i class="fa fa-user"></i>
+				</span>
+				
+				<span class="author" itemprop="copyrightHolder">
+					Jagger Fifield
+				</span>
+			</div>
+		</footer>
 
+	</body>
 </html>
