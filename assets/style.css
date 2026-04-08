@@ -14,9 +14,13 @@
 	/*background-color: #E5E9F0;*/
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-right: 10px;
+	/*margin-right: 10px;*/
 	display: block;
 	float: left;
+}
+
+.nav_button:hover {
+    background-color: #ECEFF4
 }
 
 a:visited.nav_button, a:visited.nav_button_active, a:link.nav_button, a:link.nav_button_active {
@@ -30,8 +34,46 @@ a:visited.nav_button, a:visited.nav_button_active, a:link.nav_button, a:link.nav
 	background-color: #5E81AC;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-right: 10px;
+	/*margin-right: 10px;*/
 	display: block;
 	float: left;
 
 }
+
+.three_tile {
+    height: 200px;
+    width: 94%;
+    padding: 4px 12px 12px 12px;
+    border-style: solid;
+    border-color: #88C0D0;
+    background-color: #81A1C1;
+    border-radius: 15px;
+    text-align: center;
+    font-family: "Noto Sans Mono";
+    position: relative;
+}
+
+.three_tile:hover {
+    border-color: #D08770
+}
+
+.ghost_tile {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ghost_button {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.three_table_row {
+    padding: 24px 12px 24px 12px;
+}
+
+
