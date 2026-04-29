@@ -20,3 +20,7 @@ touch image.html
 DEL image.html
 cat pages\header.html pages\image.html pages\footer.html >> image.html
 
+touch projects\programming\jnet.html
+DEL projects\programming\jnet.html
+cat pages\header.html pages\projects\programming\jnet.html pages\footer.html >> projects\programming\jnet.html
+

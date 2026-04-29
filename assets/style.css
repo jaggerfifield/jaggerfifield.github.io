@@ -40,6 +40,15 @@ a:visited.nav_button, a:visited.nav_button_active, a:link.nav_button, a:link.nav
 
 }
 
+.full_page {
+    margin: 15px;
+    padding: 12px 12px 12px 12px;
+    background-color: #81A1C1;
+    border-radius: 15px;
+    text-align: center;
+    font-family: "Noto Sans Mono";
+}
+
 .three_tile {
     height: 200px;
     width: 94%;

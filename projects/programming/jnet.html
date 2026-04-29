@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+	<head>
+		<!--Set the encoding-->
+		<meta charset="UTF-8">
+
+		<!--Import the styles-->
+		<link rel="stylesheet" type="text/css" href='https://jaggerfifield.github.io/assets/style.css'>
+        <link href="https://fonts.googleapis.com/css?family=Noto%20Sans%20Mono" rel="stylesheet">
+
+		<!--Set icon-->
+		<link rel="icon" type="image/png" href="./assets/favicon/favicon32x32.png" sizes="32x32" />
+	
+        <script></script>
+
+    </head>
+
+    <body style="background-color: #3b4252; margin: 0">
+
+		<!--The Main Header-->
+        <div style="text-align: center;background-color: #5e81ac;margin-bottom: 0;">
+        	<p style="font-family: Noto Sans Mono,serif;font-size: 80px;margin: 20px;margin-bottom:0px;padding: 10px;color: #2e3440">&nbsp;Jagger Fifield&nbsp;</p>
+        </div>
+
+		<!--The nav bar-->
+		<div style="background-color: #D8Dee9;height:44px;text-align:center;line-height:44px">
+			<a id="nav-index" class="nav_button" href="https://jaggerfifield.github.io/index.html" title="Home page">Home</a>
+			<a id="nav-programming" class="nav_button" href="https://jaggerfifield.github.io/programming.html" title="Programming">Programming</a>
+			<a id="nav-blender" class="nav_button" href="https://jaggerfifield.github.io/blender.html" title="Blender projects">Blender (3D)</a>
+		</div>
+
+<title>JN | JNet</title>
+<script>document.getElementById("nav-programming").className = "nav_button_active"</script>
+
+<link rel="stylesheet" type="text/css" href="../../assets/style.css">
+
+<div class="full_page">
+    <h1><a href="https://github.com/jaggerfifield/jaggerfifield.github.io">jaggerfifield.github.io</a></h1>
+    <hr>
+
+    <div style="text-align: left; padding 5px;">
+        Hello world! This is my personal website, where I try to talk about some projects or interesting things that are happening. I am not really a web designer but wanted to try putting together some html and see how it goes. All of the pages have been hand programmed by myself, with a bit of help from stackoverflow or w3School. Since my site is hosted by github pages, I am unable to access the html server but if I could I would be experimenting with HTML generation server-side, so the site would be built as you used it. But here, this is not the case. Instead, my pages are made by combining multiple fragmented html files to create a complete htmp page. The main fragments that are joined together are the header, content, and footer but it really depends on the page's content. Take this page for example, it is a combination of 3 fragments: header.html + jnet.html + footer.html -> jnet.html. You can see the page generation script <a href="../../generate.bat">here</a>. Its just a simple cat of the seperate fragments. The reason I do this is (again im not a web programmer) to have a single file control site wide changes. So when I edit header.html it applys the changes to evey webpage that used the header. I would hope there is a better way to do this but could not figure it out, so this is what im going to use for now. Anyway Im suprised that you are still reading this, are you really that interested in a random website made by a non-web programmer? 
+    </div>
+
+    <div style="text-align: left; padding-top: 30px;">
+        I played around with some different styles when making the site, you can see the most early design <a href="../../archive/index_old.html">here</a> or another one <a href="../../archive/index_2022.html">here</a>. You can really see what design elements were carried on to the next interation, like how the header has the centered text with a plane below for navigation. Currently the theme of the site is following the <a href="https://www.nordtheme.com">nord</a> color scheme. I am enjoying this theme so it will probably stay around for now. One design choice I made, is to avoid pictues on my site. This is to hopefully reduce network traffic, so the pages are only downloading text html and not graphics. Its not a forced rule and you may find some graphics across the site, but im trying to keep it down to a minimum. It could also be a fun game, have you found a page with a image on it yet? I belive that sometimes a image is needed to convey inforamtion so Im not going to ban them from my site, but who doesnt want a page to load faster. 
+    </div>
+    
+    <div style="text-align: left; padding-top: 30px;">
+        Ok so you made it to the third paragraph, what else do I have to say? Well, lets talk about some pages I made for the site that dont really fit well anywhere else! The first page I want to talk about is the <a href="../../frame.html">canvas test</a> page. This page used to have a tab on the header bar, but I removed it. It would fit better under the programming tab, but it really isnt a whole project itself. Basically the canvas test was me playing around with the html canvas element. They are interesting arent they? In the test I made a yellow cube that can be controlled with the arrow keys to move around the canvas. I was following a tutorial (although I cant remeber wich one) about webgl. You can see the canvas code in <a href="../../framed.js">this</a> javascript file. Im not too interested in javascript so I havent visited this project for some time, but I thought using the canvas around the site could be a way to prevent some site scraping. Like printing all the text through a canvas rather than raw html, using some sort of data decoding in the javascript. It could prevent the dialoge form being easily copied and used. On this thought, if I could the site would have <a href="https://anubis.techaro.lol">anubis</a> watching over it and weighing the souls of all visitors (and hopfully) to prevent some crawlers (but again git hub pages is the html server and I dont have access to it). Maybe I need to get myself a domain soon. 
+    </div>
+    
+    <div style="text-align: left; padding-top: 30px;">
+        Oh but do you remember what we were talking about? That's right, in the last paragraph into I said there were two pages that I wanted to talk about, we only talked about one in the last paragraph. Lets discuss the other page now. <a href="../../image.html">This</a> page was made in response to a paricular class I took in university. Its a image processing prage that generates a histogram and greyscale image of whatever you upload to the page. The class was image processing, and we used scipy and python to process our images. In the class we did histograms, filters, color, sharpening, bluring, and more. It was a really fun class and I wanted to make an interactive page where you could uplad an image and see all the different processes applied to it. I havent worked on this for awhile, again simmilar to before, Im not too interested in javascript so the project has not been completed. Perhaps Ill work on it again some day. I would much rather make the image processing in python or C, but then it cant be easily used on the website for interactive use.
+    </div>
+    
+    <div style="text-align: left; padding-top: 30px;">
+        Well, I think thats a pretty solid overview of the website. You have some hisotry and design guidelines that I follow. And some pages that I made that only exist via this page. You done well reading this far. Please enjoy your stay here and have a wounderful day.
+    </div>
+
+</div>
+
+		<footer style="text-align:center;">
+			<div class="copyright">&copy; <span id="copyrightYear" itemprop="copyrightYear">2019-2026</span>
+				<span class="with-love" id="animate">
+					<i class="fa fa-user"></i>
+				</span>
+				
+				<span class="author" itemprop="copyrightHolder">
+					Jagger Fifield
+				</span>
+			</div>
+		</footer>
+
+	</body>
+</html>
